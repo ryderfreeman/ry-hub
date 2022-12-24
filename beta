@@ -17,8 +17,8 @@ local Window = Rayfield:CreateWindow({
 	KeySystem = true, -- Set this to true to use our key system
 	KeySettings = {
 		Title = "[MESSAGE] Ry's Personal Hub KEY",
-		Subtitle = "Key required to use script!",
-		Note = "Ask Ryder for the Key (ry#8844) [KEY CHANGES EVERY UPDATE!]",
+		Subtitle = "Key required to use script! [KEY CHANGES EVERY UPDATE!]",
+		Note = "Ask Ryder for the Key (ry#8844)",
 		SaveKey = true,
 		GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
 		Key = "MRBEAST"
@@ -70,6 +70,8 @@ Rayfield:Notify({
 })
 
 local Tab = Window:CreateTab("Guis.", 10590477450)
+
+local Section = Tab:CreateSection("All Games.")
 
 
 local Button = Tab:CreateButton({
@@ -156,6 +158,8 @@ local Button = Tab:CreateButton({
     end,
 })
 
+local Section = Tab:CreateSection("Certain Games.")
+
 local Button = Tab:CreateButton({
 	Name = "Rocitizens AutoFarm.",
 	Callback = function()
@@ -193,6 +197,29 @@ local Button = Tab:CreateButton({
                     Name = "Oooo!!",
                     Callback = function()
                         print("The user ajajajjaeewe72w")
+                    end
+                },
+            },
+        })
+    end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "Load Break In Script!",
+	Callback = function()
+		getgenv().fpsBoost = false
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/ryderfreeman/yea/main/BreakIN'))();
+
+        Rayfield:Notify({
+            Title = "Loaded Break In Script!",
+            Content = "The Best Break In script!",
+            Duration = 6.5,
+            Image = 4483362458,
+            Actions = { -- Notification Buttons
+                Ignore = {
+                    Name = "Great!",
+                    Callback = function()
+                        print("The user ajajajjaeewe727272w")
                     end
                 },
             },
@@ -460,5 +487,5 @@ local Button = Tab:CreateButton({
 })
 
 local Section = Tab:CreateSection("Ry's Note:")
-local Section = Tab:CreateSection("I'll probably never add more scripts here, but if I can find some.")
+local Section = Tab:CreateSection("I'll probably never add more scripts here, but if I can find some")
 local Section = Tab:CreateSection("then I'll add them.")
