@@ -227,6 +227,28 @@ local Button = Tab:CreateButton({
     end,
 })
 
+local Button = Tab:CreateButton({
+	Name = "Murder Mystery 2 Script",
+	Callback = function()
+		getgenv().fpsBoost = false
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script", true))()
+        Rayfield:Notify({
+            Title = "Loaded MM2 Script!",
+            Content = "Made by eclipse hub people.",
+            Duration = 6.5,
+            Image = 4483362458,
+            Actions = { -- Notification Buttons
+                Ignore = {
+                    Name = "Ok!",
+                    Callback = function()
+                        print("The user ajajajjaeeeewe727272w")
+                    end
+                },
+            },
+        })
+    end,
+})
+
 
 
 local Tab = Window:CreateTab("Other", 10590477450)
@@ -442,7 +464,7 @@ local Keybind = Tab:CreateKeybind({
 	end,
 })
 
-local Tab = Window:CreateTab("YBA", 10590477450)
+local Tab = Window:CreateTab("YBA", 2785498188)
 
 local Button = Tab:CreateButton({
 	Name = "Load StarHub. [REMOVES THIS GUI!] (MAKE SURE YOUR IN YBA)",
@@ -489,3 +511,10 @@ local Button = Tab:CreateButton({
 local Section = Tab:CreateSection("Ry's Note:")
 local Section = Tab:CreateSection("I'll probably never add more scripts here, but if I can find some")
 local Section = Tab:CreateSection("then I'll add them.")
+
+local Tab = Window:CreateTab("Info", 661711303)
+local Label = Tab:CreateLabel("ryderfreeman5: Made the Whole Gui!")
+local Label = Tab:CreateLabel("PlamenRocks: Doors Entity Spawner.")
+local Label = Tab:CreateLabel("Zepsyy/spongus: Crucifix And Replicator")
+local Label = Tab:CreateLabel("Eclipse Hub Made by [ANONYMOUS].")
+local Label = Tab:CreateLabel("More Soon.")
