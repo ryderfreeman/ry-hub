@@ -7,7 +7,7 @@ local Window = Rayfield:CreateWindow({
 	ConfigurationSaving = {
 		Enabled = true,
 		FolderName = nil, -- Create a custom folder for your hub/game
-		FileName = "Big Hub"
+		FileName = "RyHubWorkSpace"
 	},
         Discord = {
         	Enabled = false,
@@ -17,11 +17,11 @@ local Window = Rayfield:CreateWindow({
 	KeySystem = true, -- Set this to true to use our key system
 	KeySettings = {
 		Title = "[MESSAGE] Ry's Personal Hub KEY",
-		Subtitle = "Key required",
-		Note = "Ask ry for the Key (ry#8844)",
+		Subtitle = "Key required to use script!",
+		Note = "Ask Ryder for the Key (ry#8844) [KEY CHANGES EVERY UPDATE!]",
 		SaveKey = true,
 		GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-		Key = "brah!"
+		Key = "MRBEAST"
 	}
 })
 Rayfield:Notify({
@@ -34,6 +34,36 @@ Rayfield:Notify({
             Name = "Alrighty.",
             Callback = function()
                 print("User has loaded Ry Hub.")
+            end
+        },
+    },
+})
+
+Rayfield:Notify({
+    Title = "Want to suggest a script?",
+    Content = "DM Me with a script and I'll add it!",
+    Duration = 20,
+    Image = 4483362458,
+    Actions = { -- Notification Buttons
+        Ignore = {
+            Name = "Sweet!",
+            Callback = function()
+                print("User has loaewew")
+            end
+        },
+    },
+})
+
+Rayfield:Notify({
+    Title = "I see you crackheads.",
+    Content = "_",
+    Duration = 10,
+    Image = 4483362458,
+    Actions = { -- Notification Buttons
+        Ignore = {
+            Name = ":stare:",
+            Callback = function()
+                print("evilsmirk")
             end
         },
     },
@@ -140,6 +170,29 @@ local Button = Tab:CreateButton({
                     Name = "Okay!",
                     Callback = function()
                         print("The user ajajajjaeewew")
+                    end
+                },
+            },
+        })
+    end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "[29K PER SEC] My Resturant!",
+	Callback = function()
+		getgenv().fpsBoost = false
+         loadstring(game:HttpGet("https://rawscripts.net/raw/My-Restaurant!-Fast-Autofarm-4610"))()
+
+        Rayfield:Notify({
+            Title = "Loaded My Resturant autofarm!",
+            Content = "Easiest way to make money! Get millions every minute!!",
+            Duration = 6.5,
+            Image = 4483362458,
+            Actions = { -- Notification Buttons
+                Ignore = {
+                    Name = "Oooo!!",
+                    Callback = function()
+                        print("The user ajajajjaeewe72w")
                     end
                 },
             },
@@ -292,7 +345,39 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/plusgiant5/Libraries/
     end,
 })
 
-local Section = Tab:CreateSection("Coming Soon.")
+local Section = Tab:CreateSection("Animations!")
+
+local Button = Tab:CreateButton({
+	Name = "NullWare V3",
+	Callback = function()
+		local LocalPlayer = game:GetService("Players").LocalPlayer
+local Heartbeat = game:GetService("RunService").Heartbeat
+
+Heartbeat:Connect(function()
+    LocalPlayer.MaximumSimulationRadius = math.huge
+    sethiddenproperty(LocalPlayer, "SimulationRadius", math.huge)
+end)
+-- Script above is a fix to limbs falling --
+
+-- Nullware Hub V3 | --
+getgenv().Theme = "Purple" -- To change the UI Theme, set this to one of the following options: "Red", "Purple", "Blue", "Green", "Yellow"
+loadstring(game:HttpGet("https://gist.githubusercontent.com/M6HqVBcddw2qaN4s/2d722888a388017c18028cd434c43a25/raw/dcccf1027fe4b90780e47767aaf584389c9d7771/EULma3fU90PUOKUn?identifier=".. (function()local a=""for b=1,256 do local c=math.random(1,3)a=a..string.char(c==1 and math.random(48,57)or c==2 and math.random(97,122)or c==3 and math.random(65,90))end;return a end)()))()
+        Rayfield:Notify({
+            Title = "Loaded NullWare V3",
+            Content = "May freeze your game 2 times.",
+            Duration = 20,
+            Image = 4483362458,
+            Actions = { -- Notification Buttons
+                Ignore = {
+                    Name = "Okay",
+                    Callback = function()
+                        print("Loaded Bu2232u3u")
+                    end
+                },
+            },
+        })
+    end,
+})
 
 local Section = Tab:CreateSection("Coming Soon.")
 
@@ -336,7 +421,21 @@ local Button = Tab:CreateButton({
 	Name = "Load StarHub. [REMOVES THIS GUI!] (MAKE SURE YOUR IN YBA)",
 	Callback = function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/WanHubMan/StarHub/main/StarHubPaid"))()-- The function that takes place when the button is pressed
-	end,
+        Rayfield:Notify({
+            Title = "Loading StarHub.",
+            Content = "The Key is randomized, Join their Discord to get it https://discord.gg/uvdfuAE3mB!",
+            Duration = 20,
+            Image = 4483362458,
+            Actions = { -- Notification Buttons
+                Ignore = {
+                    Name = "Got it.",
+                    Callback = function()
+                        print("The user tapped Nice!")
+                    end
+                },
+            },
+        })
+    end,
 })
 
 local Button = Tab:CreateButton({
@@ -360,3 +459,6 @@ local Button = Tab:CreateButton({
     end,
 })
 
+local Section = Tab:CreateSection("Ry's Note:")
+local Section = Tab:CreateSection("I'll probably never add more scripts here, but if I can find some.")
+local Section = Tab:CreateSection("then I'll add them.")
