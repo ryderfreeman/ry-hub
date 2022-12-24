@@ -64,10 +64,87 @@ local Button = Tab:CreateButton({
 })
 
 local Button = Tab:CreateButton({
-	Name = "Free Gamepasses (W/ InfJump)",
+	Name = "Free Gamepasses (W/ InfJump) [BROKEN]",
 	Callback = function()
 		loadstring(game:HttpGet('https://pastebin.com/JTbRpfjA'))()-- The function that takes place when the button is pressed
-	end,
+        Rayfield:Notify({
+            Title = "Loaded Free Gamepasses!",
+            Content = "Script not made by me.",
+            Duration = 6.5,
+            Image = 4483362458,
+            Actions = { -- Notification Buttons
+                Ignore = {
+                    Name = "Okay.",
+                    Callback = function()
+                        print("The user tapped Obr")
+                    end
+                },
+            },
+        })
+    end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "[CHEAT X] Hitbox Extender W Crosshair.",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/shit%20script%20pack/CheatX'))()-- The function that takes place when the button is pressed
+        Rayfield:Notify({
+            Title = "Loaded Cheat X!",
+            Content = "Script not made by me.",
+            Duration = 6.5,
+            Image = 4483362458,
+            Actions = { -- Notification Buttons
+                Ignore = {
+                    Name = "Oki Dokie!",
+                    Callback = function()
+                        print("The user ajajajja")
+                    end
+                },
+            },
+        })
+    end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "[Owl Hub] AimBot Script.",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();-- The function that takes place when the button is pressed
+        Rayfield:Notify({
+            Title = "Loaded Owl Hub!",
+            Content = "A Great Aimbot script!",
+            Duration = 6.5,
+            Image = 4483362458,
+            Actions = { -- Notification Buttons
+                Ignore = {
+                    Name = "Sick!",
+                    Callback = function()
+                        print("The user ajajajjae")
+                    end
+                },
+            },
+        })
+    end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "Rocitizens AutoFarm.",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Empire4946/rocitizens-funny-empifysouth/main/main.lua",true))()
+        Rayfield:Notify({
+            Title = "Loaded Rocitizens autofarm!",
+            Content = "Go to the Hospital firstly!",
+            Duration = 6.5,
+            Image = 4483362458,
+            Actions = { -- Notification Buttons
+                Ignore = {
+                    Name = "Okay!",
+                    Callback = function()
+                        print("The user ajajajjaeewew")
+                    end
+                },
+            },
+        })
+    end,
 })
 
 
@@ -215,6 +292,9 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/plusgiant5/Libraries/
     end,
 })
 
+local Section = Tab:CreateSection("Coming Soon.")
+
+local Section = Tab:CreateSection("Coming Soon.")
 
 local Tab = Window:CreateTab("Doors.", 10590477450)
 
