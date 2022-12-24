@@ -330,7 +330,7 @@ local Section = Tab:CreateSection("FE Scripts")
 local Button = Tab:CreateButton({
 	Name = "[R6] Parkour",
 	Callback = function()
-		loadstring(game:HttpGet('https://pastebin.com/raw/t6aZMS9E'))();-- The function that takes place when the button is pressed
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/ryderfreeman/parkour2/main/mainscript'))();-- The function that takes place when the button is pressed
         Rayfield:Notify({
             Title = "FE Parkour Script.",
             Content = "Ryder's Note: I used to use this back in the days, sadly my trash charger ruined it all for me :(.",
