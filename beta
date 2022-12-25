@@ -2,7 +2,7 @@ local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shle
 
 local Window = Rayfield:CreateWindow({
 	Name = "Ry's Personal Hub",
-	LoadingTitle = "[MSG OF THE DAY] Never give up!",
+	LoadingTitle = "[MSG OF THE DAY] Merry Christmas!",
 	LoadingSubtitle = "Made by ryderfreeman5",
 	ConfigurationSaving = {
 		Enabled = true,
@@ -53,21 +53,11 @@ Rayfield:Notify({
         },
     },
 })
-
-Rayfield:Notify({
-    Title = "I see you crackheads.",
-    Content = "_",
-    Duration = 10,
-    Image = 4483362458,
-    Actions = { -- Notification Buttons
-        Ignore = {
-            Name = ":stare:",
-            Callback = function()
-                print("evilsmirk")
-            end
-        },
-    },
-})
+local Tab = Window:CreateTab("Changelogs!", 661711303)
+local Label = Tab:CreateLabel("Removed Starhub (its paid now :sob:)")
+local Label = Tab:CreateLabel("Added a bunch of shit to the Guis section.")
+local Label = Tab:CreateLabel("Made a free version :thumbs_up:")
+local Label = Tab:CreateLabel("Added keybinds to the BHOP scripts.")
 
 local Tab = Window:CreateTab("Guis.", 10590477450)
 
@@ -529,26 +519,6 @@ local Keybind = Tab:CreateKeybind({
 
 local Tab = Window:CreateTab("YBA", 2785498188)
 
-local Button = Tab:CreateButton({
-	Name = "Load StarHub. [REMOVES THIS GUI!] (MAKE SURE YOUR IN YBA)",
-	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/WanHubMan/StarHub/main/StarHubPaid"))()-- The function that takes place when the button is pressed
-        Rayfield:Notify({
-            Title = "Loading StarHub.",
-            Content = "The Key is randomized, Join their Discord to get it https://discord.gg/uvdfuAE3mB!",
-            Duration = 20,
-            Image = 4483362458,
-            Actions = { -- Notification Buttons
-                Ignore = {
-                    Name = "Got it.",
-                    Callback = function()
-                        print("The user tapped Nice!")
-                    end
-                },
-            },
-        })
-    end,
-})
 
 local Button = Tab:CreateButton({
 	Name = "Load Bitch Boy.",
