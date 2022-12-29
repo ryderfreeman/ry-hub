@@ -58,6 +58,7 @@ local Label = Tab:CreateLabel("Removed Starhub (its paid now :sob:)")
 local Label = Tab:CreateLabel("Added a bunch of shit to the Guis section.")
 local Label = Tab:CreateLabel("Made a free version :thumbs_up:")
 local Label = Tab:CreateLabel("Added keybinds to the BHOP scripts.")
+local Label = Tab:CreateLabel("making memes at 3am Script.")
 
 local Tab = Window:CreateTab("Guis.", 10590477450)
 
@@ -157,6 +158,27 @@ local Button = Tab:CreateButton({
         Rayfield:Notify({
             Title = "Loaded Rocitizens autofarm!",
             Content = "Go to the Hospital firstly!",
+            Duration = 6.5,
+            Image = 4483362458,
+            Actions = { -- Notification Buttons
+                Ignore = {
+                    Name = "Okay!",
+                    Callback = function()
+                        print("The user ajajajjaeewew")
+                    end
+                },
+            },
+        })
+    end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "making memes in your basement at 3 AM tycoon AutoFarm",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/ryderfreeman/makingmemes/main/makingmemesscript'))();
+        Rayfield:Notify({
+            Title = "Loaded MMIYBA3AT AutoFarm",
+            Content = "Script not made by me.",
             Duration = 6.5,
             Image = 4483362458,
             Actions = { -- Notification Buttons
