@@ -55,7 +55,6 @@ Rayfield:Notify({
 })
 local Tab = Window:CreateTab("Changelogs!", 661711303)
 local Label = Tab:CreateLabel("Removed Starhub (its paid now :sob:)")
-local Label = Tab:CreateLabel("Added a bunch of shit to the Guis section.")
 local Label = Tab:CreateLabel("Made a free version :thumbs_up:")
 local Label = Tab:CreateLabel("Added keybinds to the BHOP scripts.")
 local Label = Tab:CreateLabel("making memes at 3am Script.")
@@ -423,26 +422,6 @@ local Button = Tab:CreateButton({
     end,
 })
 
-local Button = Tab:CreateButton({
-	Name = "Booba!?!?!? [Requires Pink Ornament earrings, MotoCross 77 and 62.",
-	Callback = function()
-		loadstring(game:HttpGet('https://pastebin.com/raw/YH755ahT'))();-- The function that takes place when the button is pressed
-        Rayfield:Notify({
-            Title = "FE Boobs.",
-            Content = "Oh god how could you..",
-            Duration = 7,
-            Image = 4483362458,
-            Actions = { -- Notification Buttons
-                Ignore = {
-                    Name = ":evilsmirk:",
-                    Callback = function()
-                        print("Loaded Booba.")
-                    end
-                },
-            },
-        })
-    end,
-})
 
 local Button = Tab:CreateButton({
 	Name = "FE Gun. [Requires Elemental Golem Crystal shoulder, SPECOPS CRL4 Back.",
