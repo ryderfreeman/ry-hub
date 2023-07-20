@@ -403,26 +403,6 @@ local Keybind = Tab:CreateKeybind({
 local Tab = Window:CreateTab("YBA", 2785498188)
 
 
-local Button = Tab:CreateButton({
-	Name = "Load Bitch Boy.",
-	Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/zakater5/LuaRepo/main/YBA/v3.lua"))()-- The function that takes place when the button is pressed
-        Rayfield:Notify({
-            Title = "Loading Bitch Boy.",
-            Content = "2nd Best YBA Gui.",
-            Duration = 6.5,
-            Image = 4483362458,
-            Actions = { -- Notification Buttons
-                Ignore = {
-                    Name = "Nice!",
-                    Callback = function()
-                        print("The user tapped Nice!")
-                    end
-                },
-            },
-        })
-    end,
-})
 
 local Section = Tab:CreateSection("Ry's Note:")
 local Section = Tab:CreateSection("I'll probably never add more scripts here, but if I can find some")
