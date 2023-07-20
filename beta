@@ -85,26 +85,7 @@ local Button = Tab:CreateButton({
     end,
 })
 
-local Button = Tab:CreateButton({
-	Name = "Free Gamepasses (W/ InfJump) [BROKEN]",
-	Callback = function()
-		loadstring(game:HttpGet('https://pastebin.com/JTbRpfjA'))()-- The function that takes place when the button is pressed
-        Rayfield:Notify({
-            Title = "Loaded Free Gamepasses!",
-            Content = "Script not made by me.",
-            Duration = 6.5,
-            Image = 4483362458,
-            Actions = { -- Notification Buttons
-                Ignore = {
-                    Name = "Okay.",
-                    Callback = function()
-                        print("The user tapped Obr")
-                    end
-                },
-            },
-        })
-    end,
-})
+
 
 local Button = Tab:CreateButton({
 	Name = "[CHEAT X] Hitbox Extender W Crosshair.",
@@ -150,26 +131,7 @@ local Button = Tab:CreateButton({
 
 local Section = Tab:CreateSection("Certain Games.")
 
-local Button = Tab:CreateButton({
-	Name = "Rocitizens AutoFarm.",
-	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Empire4946/rocitizens-funny-empifysouth/main/main.lua",true))()
-        Rayfield:Notify({
-            Title = "Loaded Rocitizens autofarm!",
-            Content = "Go to the Hospital firstly!",
-            Duration = 6.5,
-            Image = 4483362458,
-            Actions = { -- Notification Buttons
-                Ignore = {
-                    Name = "Okay!",
-                    Callback = function()
-                        print("The user ajajajjaeewew")
-                    end
-                },
-            },
-        })
-    end,
-})
+
 
 local Button = Tab:CreateButton({
 	Name = "making memes in your basement at 3 AM tycoon AutoFarm",
@@ -192,28 +154,7 @@ local Button = Tab:CreateButton({
     end,
 })
 
-local Button = Tab:CreateButton({
-	Name = "[29K PER SEC] My Resturant!",
-	Callback = function()
-		getgenv().fpsBoost = false
-         loadstring(game:HttpGet("https://rawscripts.net/raw/My-Restaurant!-Fast-Autofarm-4610"))()
 
-        Rayfield:Notify({
-            Title = "Loaded My Resturant autofarm!",
-            Content = "Easiest way to make money! Get millions every minute!!",
-            Duration = 6.5,
-            Image = 4483362458,
-            Actions = { -- Notification Buttons
-                Ignore = {
-                    Name = "Oooo!!",
-                    Callback = function()
-                        print("The user ajajajjaeewe72w")
-                    end
-                },
-            },
-        })
-    end,
-})
 
 local Button = Tab:CreateButton({
 	Name = "Load Break In Script!",
